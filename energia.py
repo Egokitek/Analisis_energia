@@ -3,7 +3,6 @@ import pandas as pd
 
 import plotly.graph_objects as go
 
-
 # Listas de datos
 paises = ["China","USA","Brasil","Canada","India","Alemania","Rusia","Japón","Francia","Italia",
           "UK","España","Turquía","México","Australia","Indonesia","Thailandia","Corea del Sur","Irán","Taiwán"]
@@ -31,13 +30,20 @@ values = {
     "Taiwán": [9, 2, 1, 0]
 }
 
-# 
+st.sidebar.title("Diagramas Sankey")
+st.sidebar.markdown("---")
+st.sidebar.markdown("Que es un diagrama de Sankey?")
+st.sidebar.markdown("https://es.wikipedia.org/wiki/Diagrama_de_Sankey")
+st.sidebar.markdown("---")
+st.sidebar.header("Menús de selección:")
+
 # Crear la interfaz de usuario
-st.title("Diagramas Sankey Interactivos")
+st.title("Análisis energético mundial")
+st.markdown("---")
 
 # Primer diagrama Sankey: Cuota de tipos de renovable por país
 st.header("Cuota de tipos de renovable por país")
-pais_seleccionado = st.selectbox("Selecciona un país", paises)
+pais_seleccionado = st.sidebar.selectbox("Selecciona un país", paises)
 value1 = values[pais_seleccionado]
 
 source1 = [0] * len(targets)  # El `source` será el país seleccionado, representado por el índice 0
@@ -62,7 +68,7 @@ st.plotly_chart(sankey_pais)
 
 # Segundo diagrama Sankey: Paises por tipo de renovable
 st.header("Paises por tipo de renovable")
-target_seleccionado = st.selectbox("Selecciona un tipo de energía", targets)
+target_seleccionado = st.sidebar.selectbox("Selecciona un tipo de energía", targets)
 index_target = targets.index(target_seleccionado)
 
 source2 = [0] * len(paises)  # El `source` será el target seleccionado, representado por el índice 0
@@ -85,3 +91,8 @@ sankey_tipo = go.Figure(go.Sankey(
 ))
 # Mostrar el diagrama Sankey
 st.plotly_chart(sankey_tipo)
+
+st.sidebar.markdown("---")
+st.sidebar.header("Acerca de ... ")
+st.sidebar.subheader("www.victorbarahona.com")
+st.sidebar.subheader("www.github.com/Egokitek")

@@ -6,12 +6,12 @@
 
 **Mi interés por este tema vino a raíz del inicio de la guerra de Ucrania** y la subida consiguiente de los precios de la energía. En aquella época había incertidumbre sobre este asunto, y me preguntaba a que países podía afectar en mayor medida esta situación.
 
-**Es un trabajo en curso** al que dedicaré tiempo a ratos, cuando pueda, con el propósito de mejorar lo que puede ofrecer. Asimismo es un trabajo de práctica, para adquirir mayor nivel en el uso de **python y streamlit**, una librería que me gusta y que quiero usar mas en el futuro.
+**Es un trabajo en curso** al que dedicaré tiempo a ratos, cuando pueda, con el propósito de mejorar lo que puede ofrecer. Asimismo es un trabajo de práctica, para adquirir mayor nivel en el uso de **streamlit**, una librería de **python** que me gusta y que quiero usar mas en el futuro.
 
 **La fuente de datos está sacada de Kaggle**, pero seguiré indagando para ver si encuentro datos mas completos.
 
 Puedes encontrar una demo de este proyecto en la web oficial de Streamlit.
-
+[**energiamundial**](https://energiamundial.streamlit.app/)
 # 
 
 ![**Captura de pantalla** ](Ejemplo_app.PNG) 
